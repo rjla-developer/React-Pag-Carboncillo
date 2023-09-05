@@ -1,9 +1,15 @@
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
+
+//CSS:
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../css/global.css"
+
+//Components:
 import NavbarHome from "@/components/navbar/NavbarHome";
 import Footer from "@/components/footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const nunito= Nunito({ subsets: ["latin"], weight: ["700"] });
 
 export const metadata = {
   title: "Carboncillo",
@@ -13,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body>
+      <body className={nunito.className}>
         <NavbarHome />
         {children}
         <Footer />

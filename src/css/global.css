@@ -1,0 +1,13 @@
+/* Tamaño de fuentes: */
+
+.font-size-1{
+    font-size: 2.5rem;
+}
+
+
+
+@media (min-width: 992px) {
+    .font-size-1{
+        font-size: 4rem;
+    }
+}
