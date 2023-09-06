@@ -1,3 +1,5 @@
+/* -----------------Estilos empezando en celulares ----------------- */
+
 /* Tamaño de fuentes: */
 
 .font-size-1{
@@ -5,8 +7,64 @@
 }
 
 
+/* Text colors: */
+
+.txt-color-yellow{
+    color: #ffb300;
+}
+
+.txt-color-green{
+    color: #2cd77f;
+}
+
+.txt-color-purple{
+    color: #853dff;
+}
+
+.txt-color-orange{
+    color: #ff6600
+}
+
+.txt-color-blue{
+    color: #0088ff;
+}
+
+.txt-color-rose{
+    color: #ff50ad;
+}
+
+
+/* Background colors: */
+
+.background-yellow{
+    background-color: #ffb300;
+}
+
+.background-green{
+    background-color: #2cd77f;
+}
+
+.background-purple{
+    background-color: #853dff;
+}
+
+.background-orange{
+    background-color: #ff6600
+}
+
+.background-blue{
+    background-color: #0088ff;
+}
+
+.background-rose{
+    background-color: #ff50ad;
+}
+
 
 @media (min-width: 992px) {
+
+    /* Tamaño de fuentes: */
+    
     .font-size-1{
         font-size: 4rem;
     }

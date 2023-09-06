@@ -1,5 +1,12 @@
 .secc1 {
-  background-image: url("../../../img/Home/background-home.webp");
+  background-image: url("../../../img/home/background-home.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.secc2 {
+  background-image: url("../../../img/home/background-home-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

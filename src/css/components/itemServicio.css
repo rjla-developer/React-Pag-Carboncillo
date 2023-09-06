@@ -1,0 +1,39 @@
+/* Borders in section "Social media" */
+
+.border-item {
+  border: 1px;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+.border-color-yellow {
+  border-color: #ffb300;
+}
+
+.border-color-green {
+  border-color: #2cd77f;
+}
+
+.border-color-purple {
+  border-color: #853dff;
+}
+
+.border-color-orange {
+  border-color: #ff6600;
+}
+
+.border-color-blue {
+  border-color: #0088ff;
+}
+
+.border-color-rose {
+  border-color: #ff50ad;
+}
+
+.btn-style {
+  padding: 0.5rem;
+}
+
+/* .btn-style:hover{
+    padding: .52rem;
+  } */
