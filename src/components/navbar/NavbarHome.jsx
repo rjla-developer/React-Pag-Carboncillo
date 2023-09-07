@@ -1,20 +1,23 @@
 "use client";
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
 function NavbarHome() {
   return (
     <div className="fixed-top px-0">
       {/* Menu computadora */}
-      <Navbar className="d-xl-block d-none position-absolute w-100">
+      <Navbar className="d-xl-block d-none align-top w-100">
         <Container className="py-2">
           <Navbar.Brand className="d-flex align-items-center">
-            <Image
-              className="d-inline-block align-top img-fluid w-25"
-              src={require("../../img/Logo/logo.png")}
-              alt="Picture of the author"
-            />
+            <Link href="/">
+              <Image
+                className="d-inline-block img-fluid w-25"
+                src={require("../../img/logo/logo.png")}
+                alt="Picture of the author"
+              />
+            </Link>
           </Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="">
@@ -34,15 +37,17 @@ function NavbarHome() {
       </Navbar>
 
       {/* Menu Phone */}
-      <Navbar className="d-block d-xl-none" expand="xl">
+      <Navbar className="d-block d-xl-none align-top" expand="xl">
         <Container className="py-3 px-1">
           <Navbar.Brand className="d-flex align-items-center">
-            <Image
-              className="d-inline-block align-top img-fluid"
-              width="200"
-              src={require("../../img/Logo/logo.png")}
-              alt="Picture of the author"
-            />
+            <Link href="/" className="ms-2">
+              <Image
+                className="d-inline-block img-fluid"
+                width="200"
+                src={require("../../img/logo/logo.png")}
+                alt="Picture of the author"
+              />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" className="me-3 bg-light" />
           <Navbar.Collapse id="navbarNav" className="bg-light ps-2">
