@@ -1,9 +1,13 @@
 "use client";
-import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Image from "next/image";
 import "../css/screens/home/home.css";
 import ItemServicio from "@/components/home/itemServicio";
+
+import { useRef, useEffect } from "react";
+import { register } from "swiper/element/bundle";
+
+register();
 
 function Home() {
   const dataItemsServices = [
@@ -56,12 +60,27 @@ function Home() {
       backgroundColorItem: "background-rose",
     },
   ];
+
+  const swiperElRef = useRef(null);
+
+  useEffect(() => {
+    // listen for Swiper events using addEventListener
+    swiperElRef.current.addEventListener("progress", (e) => {
+      const [swiper, progress] = e.detail;
+      console.log(progress);
+    });
+
+    swiperElRef.current.addEventListener("slidechange", (e) => {
+      console.log("slide changed");
+    });
+  }, []);
+
   return (
-    <Container fluid className="p-0 text-white">
-      <div className="secc1 py-5">
-        <Container className="py-5">
-          <Row className="py-5">
-            <Col className="py-0 py-lg-5" xs={10} lg={7}>
+    <Container fluid className="p-0 text-white bg-black">
+      <div className="secc1 py-0 py-lg-5">
+        <Container className="pt-5">
+          <Row className="py-5 mt-5 mt-lg-2">
+            <Col className="mt-4 mt-lg-5" xs={10} lg={7}>
               <div className="py-0 py-lg-4">
                 <p className="font-size-1 text-white text-uppercase">
                   <span className="txt-color-blue font-size-1">IMPULSANDO</span>{" "}
@@ -83,7 +102,7 @@ function Home() {
               </div>
             </Col>
           </Row>
-          <div className="text-white text-center my-5 py-3">
+          <div className="text-white text-center my-5 pb-3 pt-5">
             <Row>
               <Col>
                 <h2>SOLUCIONES DIGITALES</h2>
@@ -117,7 +136,7 @@ function Home() {
       </div>
       <div className="secc2">
         <Container>
-          <Row className="d-flex justify-content-center text-white text-center fs-2 mb-5 py-5">
+          <Row className="d-flex justify-content-center text-white text-center fs-2 mb-5 py-0 py-lg-5">
             <Col xs={11}>
               <div>
                 <p className="fs-6">@C_arboncillo</p>
@@ -134,9 +153,9 @@ function Home() {
               </div>
             </Col>
           </Row>
-          <div className="mt-5 pt-5">
-            <Row className="mt-5 pt-5">
-              <Col xs={4}>
+          <div className="mt-0 mt-lg-5 pt-0 pt-lg-5">
+            <Row className="mt-5 pt-5 d-flex justify-content-center">
+              <Col xs={10} lg={4} className="mb-3 mb-lg-0">
                 <div>
                   <Image
                     className="img-fluid rounded mb-3"
@@ -147,7 +166,7 @@ function Home() {
                   <p>Descripción</p>
                 </div>
               </Col>
-              <Col xs={4} className="mt-3">
+              <Col xs={10} lg={4} className="mt-3 mb-3 mb-lg-0">
                 <div>
                   <Image
                     className="img-fluid rounded mb-3"
@@ -158,7 +177,7 @@ function Home() {
                   <p>Descripción</p>
                 </div>
               </Col>
-              <Col xs={4} className="mt-5">
+              <Col xs={10} lg={4} className="mt-5 mb-5 mb-lg-0">
                 <div>
                   <Image
                     className="img-fluid rounded mb-3"
@@ -178,11 +197,20 @@ function Home() {
               </Col>
             </Row>
           </div>
-          <Row className="d-flex justify-content-center text-center fs-1 py-5 mt-5">
-            <Col xs={8} className="py-5 my-5">
+          <Row className="d-flex justify-content-center text-center py-0 py-lg-5 mt-0 mt-lg-5">
+            <Col xs={10} lg={8} className="py-5 mb-3 mb-lg-5 mt-3 mt-lg-5">
               <div>
                 <p className="fs-6">@C_arboncillo</p>
-                <p>
+                <p className="fs-1 d-none d-lg-block">
+                  LO QUE <span className="txt-color-yellow">COMENZÓ</span>{" "}
+                  SIENDO UNA <span className="txt-color-blue">AGENCIA</span> DE
+                  POSICIONAMIENTO SEO;
+                  <span className="txt-color-rose"> SE CONVIRTIÓ </span> EN UNA{" "}
+                  <span className="txt-color-purple">
+                    AGENCIA DE ADWORDS & SEO.
+                  </span>
+                </p>
+                <p className="fs-2 d-block d-lg-none">
                   LO QUE <span className="txt-color-yellow">COMENZÓ</span>{" "}
                   SIENDO UNA <span className="txt-color-blue">AGENCIA</span> DE
                   POSICIONAMIENTO SEO;
@@ -196,20 +224,71 @@ function Home() {
           </Row>
         </Container>
       </div>
-      <Row className="d-flex justify-content-center text-center bg-black py-5">
-        <Col>
-          <p className="fs-2"> LO QUE LA GENTE DICE DE NOSOTROS</p>
-        </Col>
-      </Row>
-      {/* <Row>
-        <Col className="mx-0">
-          <Image
-            className="img-fluid"
-            src={require("../img/Home/background-home.webp")}
-            alt="Picture of the author"
-          />
-        </Col>
-      </Row> */}
+      <div className="py-5">
+        <Container>
+          <Row className="d-flex justify-content-center text-center">
+            <Col>
+              <p className="fs-2"> LO QUE LA GENTE DICE DE NOSOTROS</p>
+            </Col>
+          </Row>
+          <Row className="d-flex justify-content-center text-center">
+            <Col xs={12} className="py-3">
+              <swiper-container
+                ref={swiperElRef}
+                slides-per-view="1"
+                navigation="true"
+                pagination="true"
+              >
+                <swiper-slide>
+                  <div className="p-5">
+                    <p className="d-none d-lg-block fs-6">
+                      "La mejor agencia que he podido encontrar, son super
+                      amables, cumplen con lo prometido y lo mejor que si obtuve
+                      resultados".
+                    </p>
+                    <p className="d-none d-lg-block fs-6">Anna G.</p>
+                    <p className="d-block d-lg-none fs-4">
+                      "La mejor agencia que he podido encontrar, son super
+                      amables, cumplen con lo prometido y lo mejor que si obtuve
+                      resultados".
+                    </p>
+                    <p className="d-block d-lg-none fs-4">Anna G.</p>
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div className="p-5">
+                    <p className="d-none d-lg-block fs-6">
+                      "No hay otra agencia digital en esta región que haya
+                      podido atender todas mis necesidades".
+                    </p>
+                    <p className="d-none d-lg-block fs-6">Santiago L.</p>
+                    <p className="d-block d-lg-none fs-4">
+                      "No hay otra agencia digital en esta región que haya
+                      podido atender todas mis necesidades".
+                    </p>
+                    <p className="d-block d-lg-none fs-4">Santiago L.</p>
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div className="p-5">
+                    <p className="d-none d-lg-block fs-6">
+                      "Me han ayudado bastante a elevar mi trafico web, con toda
+                      confianza la recomiendo".
+                    </p>
+                    <p className="d-none d-lg-block fs-6">Anna G.</p>
+                    <p className="d-block d-lg-none fs-4">
+                      "Me han ayudado bastante a elevar mi trafico web, con toda
+                      confianza la recomiendo".
+                    </p>
+                    <p className="d-block d-lg-none fs-4">Anna G.</p>
+                  </div>
+                </swiper-slide>
+                ...
+              </swiper-container>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </Container>
   );
 }
