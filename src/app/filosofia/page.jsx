@@ -3,7 +3,7 @@ import "../../css/screens/filosofia/filosofia.css";
 
 function Filosofia() {
   return (
-    <div className="section1 container-fluid py-0 py-lg-5 text-white">
+    <div className="sectionfilosofia container-fluid py-0 py-lg-5 text-white">
       <div className="container pt-5">
         <div className="row py-5 mt-5 mt-lg-2 mb-5">
           <div className="col-10 col-lg-7 mt-4 mt-lg-5">
