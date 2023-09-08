@@ -1,6 +1,6 @@
+"use client"
 import React from "react";
-import { Col } from "react-bootstrap";
-import "../../css/components/itemServicio.css"
+import "../../../css/components/itemServicio.css"
 
 function ItemServicio({
   titleService,
@@ -10,10 +10,8 @@ function ItemServicio({
   backgroundColorItem,
 }) {
   return (
-    <Col
-      xs={10}
-      lg={3}
-      className={`${borderColorItem} border-item p-3 mx-3 mb-3 mb-lg-5`}
+    <div
+      className={`col-10 col-lg-3 ${borderColorItem} border-item p-3 mx-3 mb-3 mb-lg-5`}
     >
       <p className={`${textColorItem}  fs-4`}>{titleService}</p>
       <p>{descService}</p>
@@ -25,7 +23,7 @@ function ItemServicio({
       >
         Conocer más
       </button>
-    </Col>
+    </div>
   );
 }
 

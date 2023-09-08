@@ -1,12 +1,12 @@
-.secc1 {
-  background-image: url("../../../img/home/background-home.webp");
+.section1 {
+  background-image: url("../../../img/screens/home/background-home.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.secc2 {
-  background-image: url("../../../img/home/background-home-2.webp");
+.section2 {
+  background-image: url("../../../img/screens/home/background-home-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

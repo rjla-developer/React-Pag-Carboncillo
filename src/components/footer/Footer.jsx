@@ -2,6 +2,7 @@
 import React from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
 import { ImFacebook } from "react-icons/im";
 import { BsInstagram } from "react-icons/bs";
@@ -35,33 +36,36 @@ function Footer() {
           >
             <div className="mt-0 mt-lg-5">
               <p className="font-weight-bold mb-3 fs-4">¡Contáctanos!</p>
-              <a
+              <Link
                 href="mailto:carboncillomtk@gmail.com?subject=Me%20interesa%20informes"
                 className="text-decoration-none text-white"
+                rel="noopener noreferrer"
               >
                 <p className="mb-1 fs-5">
                   <MdOutlineEmail className="me-1" />
                   carboncillomtk@gmail.com
                 </p>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="tel:+5561196686"
                 className="text-decoration-none text-white"
+                rel="noopener noreferrer"
               >
                 <p className="mb-1 fs-5">
                   <BsTelephone className="me-1" />
                   55 611 966 86
                 </p>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/c_arboncillo/"
                 target="_blank"
                 className="text-decoration-none text-white"
+                rel="noopener noreferrer"
               >
                 <p className="mb-1 fs-5">
                   <BsInstagram className="me-1" /> @c_arboncillo
                 </p>
-              </a>
+              </Link>
             </div>
           </Col>
           <Col
@@ -106,26 +110,29 @@ function Footer() {
             lg={6}
             className="text-center text-lg-end mb-3 mb-lg-0 order-first order-lg-last"
           >
-            <a
+            <Link
               href="https://www.facebook.com/agenciacarboncillo"
               target="_blank"
               className="text-decoration-none text-white"
+              rel="noopener noreferrer"
             >
               <ImFacebook />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.instagram.com/c_arboncillo/"
               target="_blank"
               className="text-decoration-none text-white"
+              rel="noopener noreferrer"
             >
               <BsInstagram className="mx-5" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="mailto:carboncillomtk@gmail.com?subject=Me%20interesa%20informes"
               className="text-decoration-none text-white"
+              rel="noopener noreferrer"
             >
               <MdOutlineEmail />
-            </a>
+            </Link>
           </Col>
         </Row>
       </Container>
