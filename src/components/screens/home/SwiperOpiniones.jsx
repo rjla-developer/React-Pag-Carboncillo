@@ -69,7 +69,6 @@ function SwiperOpiniones() {
           <p className="d-block d-lg-none fs-4">Anna G.</p>
         </div>
       </swiper-slide>
-      ...
     </swiper-container>
   );
 }

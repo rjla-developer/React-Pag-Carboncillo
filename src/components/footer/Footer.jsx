@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,10 +9,10 @@ import { BsTelephone } from "react-icons/bs";
 
 function Footer() {
   return (
-    <Container fluid className="bg-black py-4 py-lg-5 fs-5">
-      <Container className="text-white">
-        <Row className="d-flex justify-content-center mb-5">
-          <Col xs={10} lg={3} className="p-5 d-flex justify-content-center">
+    <div className="container-fluid bg-black py-4 py-lg-5 fs-5">
+      <div className="container text-white">
+        <div className="row d-flex justify-content-center mb-5">
+          <div className="col-10 col-lg-3 p-5 d-flex justify-content-center">
             <div className="mt-0 mt-lg-2">
               <Image
                 className="d-none d-lg-block img-fluid rounded mb-3 "
@@ -28,12 +26,8 @@ function Footer() {
                 alt=""
               />
             </div>
-          </Col>
-          <Col
-            className="d-flex justify-content-center text-center mt-3 mt-lg-0 mb-4 mb-lg-0"
-            xs={11}
-            lg={4}
-          >
+          </div>
+          <div className="col-11 col-lg-4 d-flex justify-content-center text-center mt-3 mt-lg-0 mb-4 mb-lg-0">
             <div className="mt-0 mt-lg-5">
               <p className="font-weight-bold mb-3 fs-4">¡Contáctanos!</p>
               <Link
@@ -67,49 +61,52 @@ function Footer() {
                 </p>
               </Link>
             </div>
-          </Col>
-          <Col
-            xs={12}
-            lg={4}
-            className="background-purple shadow d-flex justify-content-center mt-5 mt-lg-0 rounded p-3"
-          >
+          </div>
+          <div className="col-12 col-lg-4 background-purple shadow d-flex justify-content-center mt-5 mt-lg-0 rounded p-3">
             <div className="p-2 p-lg-3 rounded">
               <p className="font-weight-bold text-center fs-3 mb-4 mb-lg-3">
                 Déjanos tu correo y nos contactaremos contigo
               </p>
-              <Form>
-                <Form.Group className="mb-3" controlId="email">
-                  <Form.Label>Ingresa tu correo:</Form.Label>
-                  <Form.Control placeholder="example@hotmail.com" />
-                </Form.Group>
+              <form>
+                <div className="row">
+                  <div className="col-12 col-lg-6 mb-4">
+                    <label htmlFor="footer-email" className="form-label">
+                      Ingresa tu correo:
+                    </label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="footer-email"
+                      placeholder="name@example.com"
+                    />
+                  </div>
 
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Comentario:</Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    placeholder="Describe cual servicio estas interesado(a)"
-                    style={{ height: "100px" }}
-                  />
-                </Form.Group>
+                  <div className="col-12 col-lg-6 mb-4">
+                    <label htmlFor="footer-comentario" className="form-label">
+                      Describe cuales de nuestros servicio es de tu interes:
+                    </label>
+                    <textarea
+                      className="form-control"
+                      id="footer-comentario"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
 
-                <Button variant="outline-light" type="submit" className="px-3">
-                  Enviar
-                </Button>
-              </Form>
+                <button className="btn btn-outline-light btn-lg" type="submit">
+                  Iniciar ahora
+                </button>
+              </form>
             </div>
-          </Col>
-        </Row>
-        <Row className="d-flex justify-content-between">
-          <Col xs={12} lg={6}>
+          </div>
+        </div>
+        <div className="row d-flex justify-content-between">
+          <div className="col-12 col-lg-6">
             <p className="fs-6 mb-0 text-center text-lg-start">
               Todos los derechos reservados | Carboncillo © 2023
             </p>
-          </Col>
-          <Col
-            xs={12}
-            lg={6}
-            className="text-center text-lg-end mb-3 mb-lg-0 order-first order-lg-last"
-          >
+          </div>
+          <div className="col-12 col-lg-6 text-center text-lg-end mb-3 mb-lg-0 order-first order-lg-last">
             <Link
               href="https://www.facebook.com/agenciacarboncillo"
               target="_blank"
@@ -133,10 +130,10 @@ function Footer() {
             >
               <MdOutlineEmail />
             </Link>
-          </Col>
-        </Row>
-      </Container>
-    </Container>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -97,53 +97,53 @@ function Contacto() {
               <h2 className="mb-3">ESCRÍBENOS</h2>
               <form>
                 <div className="row px-0 px-lg-5 mx-0 mx-lg-5 mt-0 mt-lg-5 d-flex justify-content-center">
-                  <div class="col-12 col-lg-5 mb-4">
-                    <label for="name" class="form-label">
+                  <div className="col-12 col-lg-5 mb-4">
+                    <label htmlFor="name" className="form-label">
                       Nombres y apellidos
                     </label>
                     <input
-                      class="form-control"
+                      className="form-control"
                       id="name"
                       placeholder="Juan Rodríguez Brito"
                     />
                   </div>
 
-                  <div class="col-12 col-lg-5 mb-4">
-                    <label for="phone" class="form-label">
+                  <div className="col-12 col-lg-5 mb-4">
+                    <label htmlFor="phone" className="form-label">
                       Número de teléfono
                     </label>
                     <input
-                      class="form-control"
+                      className="form-control"
                       id="phone"
                       placeholder="(55)4335-3453"
                     />
                   </div>
 
-                  <div class="col-12 col-lg-6 mb-4">
-                    <label for="email" class="form-label">
+                  <div className="col-12 col-lg-6 mb-4">
+                    <label htmlFor="email" className="form-label">
                       Correo eléctronico
                     </label>
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       id="email"
                       placeholder="name@example.com"
                     />
                   </div>
 
-                  <div class="col-12 col-lg-6 mb-4">
-                    <label for="mensaje" class="form-label">
+                  <div className="col-12 col-lg-6 mb-4">
+                    <label htmlFor="mensaje" className="form-label">
                       Mensaje
                     </label>
                     <textarea
-                      class="form-control"
+                      className="form-control"
                       id="mensaje"
                       rows="3"
                     ></textarea>
                   </div>
 
                   <div className="col-auto">
-                    <button type="submit" class="btn btn-outline-light px-4 btn-lg fs-5">
+                    <button type="submit" className="btn btn-outline-light px-4 btn-lg fs-5">
                       Enviar
                     </button>
                   </div>

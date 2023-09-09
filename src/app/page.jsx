@@ -61,7 +61,7 @@ function Home() {
 ] */
 
   return (
-    <div fluid className="container-fluid p-0 text-white bg-black">
+    <div className="container-fluid p-0 text-white bg-black">
       <div className="section1 py-0 py-lg-5">
         <div className="container pt-5">
           <div className="row py-5 mt-5 mt-lg-2">
