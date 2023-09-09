@@ -10,28 +10,33 @@ function NavbarHome() {
       {/* Menu computadora */}
       <Navbar className="d-xl-block d-none align-top w-100">
         <Container className="py-2">
-          <Navbar.Brand className="d-flex align-items-center">
-            <Link href="/">
-              <Image
-                className="d-inline-block img-fluid w-25"
-                src={require("../../img/logo/logo.png")}
-                alt="Picture of the author"
-              />
-            </Link>
-          </Navbar.Brand>
+          <Link href="/" className="text-decoration-none text-white">
+            <Image
+              className="d-inline-block img-fluid w-25"
+              src={require("../../img/logo/logo.png")}
+              alt="Picture of the author"
+            />
+          </Link>
+
           <Nav className="mr-auto">
-            <Nav.Link href="">
+            <Link href="/" className="text-decoration-none text-white me-4">
               <p className="mb-0 text-white">Inicio</p>
-            </Nav.Link>
-            <Nav.Link>
+            </Link>
+            <Link href="/" className="text-decoration-none text-white me-4">
               <p className="mb-0 text-white">Servicios</p>
-            </Nav.Link>
-            <Nav.Link>
+            </Link>
+            <Link
+              href="/filosofia"
+              className="text-decoration-none text-white me-4"
+            >
               <p className="mb-0 text-white">Filosofía</p>
-            </Nav.Link>
-            <Nav.Link>
+            </Link>
+            <Link
+              href="/contacto"
+              className="text-decoration-none text-white me-4"
+            >
               <p className="mb-0 text-white">Contacto</p>
-            </Nav.Link>
+            </Link>
           </Nav>
         </Container>
       </Navbar>
@@ -39,8 +44,7 @@ function NavbarHome() {
       {/* Menu Phone */}
       <Navbar className="d-block d-xl-none align-top" expand="xl">
         <Container className="py-3 px-1">
-          <Navbar.Brand className="d-flex align-items-center">
-            <Link href="/" className="ms-2">
+            <Link href="/" className="text-decoration-none text-white ms-2">
               <Image
                 className="d-inline-block img-fluid"
                 width="200"
@@ -48,22 +52,27 @@ function NavbarHome() {
                 alt="Picture of the author"
               />
             </Link>
-          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" className="me-3 bg-light" />
-          <Navbar.Collapse id="navbarNav" className="bg-light ps-2">
-            <Nav className="mr-auto">
-              <Nav.Link href="">
+          <Navbar.Collapse id="navbarNav" className="bg-light ps-2 rounded-start rounded-bottom mx-3">
+            <Nav className="mr-auto rounded">
+              <Link href="/" className="text-decoration-none text-white my-2">
                 <p className="mb-0 text-dark">Inicio</p>
-              </Nav.Link>
-              <Nav.Link>
+              </Link>
+
+              <Link href="/" className="text-decoration-none text-white mb-2">
                 <p className="mb-0 text-dark">Servicios</p>
-              </Nav.Link>
-              <Nav.Link>
+              </Link>
+
+              <Link
+                href="/filosofia"
+                className="text-decoration-none text-white mb-2"
+              >
                 <p className="mb-0 text-dark">Filosofía</p>
-              </Nav.Link>
-              <Nav.Link>
+              </Link>
+
+              <Link href="/contacto" className="text-decoration-none text-white mb-2">
                 <p className="mb-0 text-dark">Contacto</p>
-              </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
