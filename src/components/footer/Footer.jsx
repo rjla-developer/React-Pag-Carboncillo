@@ -69,7 +69,7 @@ function Footer() {
               </p>
               <form>
                 <div className="row">
-                  <div className="col-12 col-lg-6 mb-4">
+                  <div className="col-12 mb-4">
                     <label htmlFor="footer-email" className="form-label">
                       Ingresa tu correo:
                     </label>
@@ -81,7 +81,7 @@ function Footer() {
                     />
                   </div>
 
-                  <div className="col-12 col-lg-6 mb-4">
+                  <div className="col-12 mb-4">
                     <label htmlFor="footer-comentario" className="form-label">
                       Describe cuales de nuestros servicio es de tu interes:
                     </label>

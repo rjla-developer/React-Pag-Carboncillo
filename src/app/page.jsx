@@ -7,59 +7,13 @@ import Image from "next/image";
 import "../css/screens/home/home.css";
 
 //Components:
-import ItemServicio from "@/components/screens/home/ItemServicio";
 import SwiperOpiniones from "@/components/screens/home/SwiperOpiniones";
+import SeccServicios from "@/components/screens/home/seccServicios";
 
 //json:
-import dataItemsServices from "../json/dataItemsServices.json"
-
+/* import dataItemsServices from "../json/dataItemsServices.json"; */
 
 function Home() {
-  /* const dataItemsServices= [
-    {
-        "titleService": "Social media",
-        "descService": "Establece vínculos emocionales con tus clientes, adéntrate al nuevo mundo de la publicidad digital y mejora tu presencia de marca en la web.",
-        "borderColorItem": "border-color-yellow",
-        "textColorItem": "txt-color-yellow",
-        "backgroundColorItem": "background-yellow"
-    },
-    {
-        "titleService": "Redes premium",
-        "descService": "Si lo tuyo es una experiencia totalmente personalizada, este plan es perfecto para ti, genera experiencias únicas en tu audiencia.",
-        "borderColorItem": "border-color-green",
-        "textColorItem": "txt-color-green",
-        "backgroundColorItem": "background-green"
-    },
-    {
-        "titleService": "Diseño de marca",
-        "descService": "Dale una identidad definida y personalizada a tu marca, distingue y destaca tus cualidades empresariales por encima de la competencia.",
-        "borderColorItem": "border-color-purple",
-        "textColorItem": "txt-color-purple",
-        "backgroundColorItem": "background-purple"
-    },
-    {
-        "titleService": "Sitios web",
-        "descService": "Construye tu espacio digital en internet y haz conocer tu marca con el mundo.",
-        "borderColorItem": "border-color-orange",
-        "textColorItem": "txt-color-orange",
-        "backgroundColorItem": "background-orange"
-    },
-    {
-        "titleService": "Google Ads",
-        "descService": "Es hora de llevar tu negocio al siguiente nivel, conecta con tu audiencia mediante diversos tipos de publicidad en el buscador más utilizado.",
-        "borderColorItem": "border-color-blue",
-        "textColorItem": "txt-color-blue",
-        "backgroundColorItem": "background-blue"
-    },
-    {
-        "titleService": "Facebook Ads",
-        "descService": "Un grupo de profesionales listos para ayudarte a conectar con tu audiencia.",
-        "borderColorItem": "border-color-rose",
-        "textColorItem": "txt-color-rose",
-        "backgroundColorItem": "background-rose"
-    }
-] */
-
   return (
     <div className="container-fluid p-0 text-white bg-black">
       <div className="section1 py-0 py-lg-5">
@@ -100,20 +54,7 @@ function Home() {
                 </p>
               </div>
             </div>
-            <div className="row mt-3 mt-lg-5 d-flex justify-content-center">
-              {dataItemsServices.map((service, index) => {
-                return (
-                  <ItemServicio
-                    key={index}
-                    titleService={service.titleService}
-                    descService={service.descService}
-                    borderColorItem={service.borderColorItem}
-                    textColorItem={service.textColorItem}
-                    backgroundColorItem={service.backgroundColorItem}
-                  />
-                );
-              })}
-            </div>
+           <SeccServicios />
           </div>
         </div>
       </div>
@@ -174,7 +115,7 @@ function Home() {
             </div>
             <div className="row d-flex justify-content-center">
               <div className="col-auto">
-                <button className="btn btn-outline-light btn-lg" >
+                <button className="btn btn-outline-light btn-lg">
                   Más acerca de nosotros
                 </button>
               </div>
