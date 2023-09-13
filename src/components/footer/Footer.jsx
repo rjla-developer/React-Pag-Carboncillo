@@ -62,7 +62,7 @@ function Footer() {
               </Link>
             </div>
           </div>
-          <div className="col-12 col-lg-4 background-purple shadow d-flex justify-content-center mt-5 mt-lg-0 rounded p-3">
+          {/* <div className="col-12 col-lg-4 background-purple shadow d-flex justify-content-center mt-5 mt-lg-0 rounded p-3">
             <div className="p-2 p-lg-3 rounded">
               <p className="font-weight-bold text-center fs-3 mb-4 mb-lg-3">
                 Déjanos tu correo y nos contactaremos contigo
@@ -98,7 +98,7 @@ function Footer() {
                 </button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="row d-flex justify-content-between">
           <div className="col-12 col-lg-6">
