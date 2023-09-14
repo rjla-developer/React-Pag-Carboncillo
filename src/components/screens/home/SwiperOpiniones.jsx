@@ -1,33 +1,28 @@
-"use client"
-import React, { useRef, useEffect } from "react";
+"use client";
+import React from "react";
 
 //Components in dependencies:
-import { register } from "swiper/element/bundle";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-register();
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 function SwiperOpiniones() {
-  const swiperElRef = useRef(null);
-
-  useEffect(() => {
-    // listen for Swiper events using addEventListener
-    swiperElRef.current.addEventListener("progress", (e) => {
-      const [swiper, progress] = e.detail;
-      console.log(progress);
-    });
-
-    swiperElRef.current.addEventListener("slidechange", (e) => {
-      console.log("slide changed");
-    });
-  }, []);
   return (
-    <swiper-container
-      ref={swiperElRef}
-      slides-per-view="1"
-      navigation="true"
-      pagination="true"
+    <Swiper
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      /* onSwiper={(swiper) => console.log(swiper)} */
+      /* onSlideChange={() => console.log("slide change")} */
     >
-      <swiper-slide>
+      <SwiperSlide>
         <div className="p-5">
           <p className="d-none d-lg-block fs-6">
             "La mejor agencia que he podido encontrar, son super amables,
@@ -40,8 +35,8 @@ function SwiperOpiniones() {
           </p>
           <p className="d-block d-lg-none fs-4">Anna G.</p>
         </div>
-      </swiper-slide>
-      <swiper-slide>
+      </SwiperSlide>
+      <SwiperSlide>
         <div className="p-5">
           <p className="d-none d-lg-block fs-6">
             "No hay otra agencia digital en esta región que haya podido atender
@@ -54,8 +49,8 @@ function SwiperOpiniones() {
           </p>
           <p className="d-block d-lg-none fs-4">Santiago L.</p>
         </div>
-      </swiper-slide>
-      <swiper-slide>
+      </SwiperSlide>
+      <SwiperSlide>
         <div className="p-5">
           <p className="d-none d-lg-block fs-6">
             "Me han ayudado bastante a elevar mi trafico web, con toda confianza
@@ -68,8 +63,8 @@ function SwiperOpiniones() {
           </p>
           <p className="d-block d-lg-none fs-4">Anna G.</p>
         </div>
-      </swiper-slide>
-    </swiper-container>
+      </SwiperSlide>
+    </Swiper>
   );
 }
 

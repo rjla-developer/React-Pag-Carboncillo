@@ -12,42 +12,31 @@
   background-position: center center;
 }
 
-
-swiper-container::part(bullet-active) {
-  background-color: white;
+.swiper-pagination-bullet {
+  background: rgb(255, 255, 255);
 }
 
-swiper-container::part(bullet) {
-  background-color: white;
+.swiper-pagination-bullet-active {
+  background: white;
 }
 
-
-swiper-container::part(button-prev){
+.swiper-button-prev,
+.swiper-button-next {
   color: white;
   height: 1rem;
 }
-
-swiper-container::part(button-next){
-  color: white;
-  height: 1rem;
-}
-
 
 /* --------------- Estilos empezando en lg ----------- */
 @media (min-width: 992px) {
-
   /* Tamaño de fuentes: */
-  
-  .font-size-1{
-      font-size: 4rem;
+
+  .font-size-1 {
+    font-size: 4rem;
   }
 
-  swiper-container::part(button-prev){
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: white;
     height: 3rem;
   }
-  
-  swiper-container::part(button-next){
-    height: 3rem;
-  }
-  
 }

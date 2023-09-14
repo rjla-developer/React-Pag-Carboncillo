@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import "../../../css/components/itemServicio.css"
+import "../../../css/global.css"
 
 function ItemServicio({
   titleService,

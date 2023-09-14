@@ -2,70 +2,102 @@
 
 /* Tamaño de fuentes: */
 
-.font-size-1{
+.font-size-1 {
     font-size: 2.5rem;
 }
 
 
 /* Text colors: */
 
-.txt-color-yellow{
+.txt-color-yellow {
     color: #ffb300;
 }
 
-.txt-color-green{
+.txt-color-green {
     color: #2cd77f;
 }
 
-.txt-color-purple{
+.txt-color-purple {
     color: #853dff;
 }
 
-.txt-color-orange{
+.txt-color-orange {
     color: #ff6600
 }
 
-.txt-color-blue{
+.txt-color-blue {
     color: #0088ff;
 }
 
-.txt-color-rose{
+.txt-color-rose {
     color: #ff50ad;
 }
 
 
 /* Background colors: */
 
-.background-yellow{
+.background-yellow {
     background-color: #ffb300;
 }
 
-.background-green{
+.background-green {
     background-color: #2cd77f;
 }
 
-.background-purple{
+.background-purple {
     background-color: #853dff;
 }
 
-.background-orange{
+.background-orange {
     background-color: #ff6600
 }
 
-.background-blue{
+.background-blue {
     background-color: #0088ff;
 }
 
-.background-rose{
+.background-rose {
     background-color: #ff50ad;
+}
+
+/* Borders colors: */
+
+.border-color-yellow {
+    border-color: #ffb300;
+}
+
+.border-color-green {
+    border-color: #2cd77f;
+}
+
+.border-color-purple {
+    border-color: #853dff;
+}
+
+.border-color-orange {
+    border-color: #ff6600;
+}
+
+.border-color-blue {
+    border-color: #0088ff;
+}
+
+.border-color-rose {
+    border-color: #ff50ad;
+}
+
+/* Border size: */
+
+.btn-style {
+    padding: 0.5rem;
 }
 
 /* --------------- Estilos empezando en lg ----------- */
 @media (min-width: 992px) {
 
     /* Tamaño de fuentes: */
-    
-    .font-size-1{
+
+    .font-size-1 {
         font-size: 4rem;
     }
 }
