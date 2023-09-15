@@ -26,6 +26,14 @@ const path = require("path");
 
 const jsonFilePath = path.join(__dirname, "./json/dataItemsServices.json");
 
+/* Json de services */
+const socialMedia = path.join(__dirname, "./json/services/social-media.json");
+const superior = path.join(__dirname, "./json/services/social-superior.json");
+const campanas = path.join(__dirname, "./json/services/campanas.json");
+const disenoMarca = path.join(__dirname, "./json/services/diseno-marca.json");
+const sitiosWeb = path.join(__dirname, "./json/services/sitios-web.json");
+const extra = path.join(__dirname, "./json/services/extra.json");
+
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
 
@@ -70,6 +78,69 @@ app.post("/lead-generation-form", async (req, res)=>{
     return res.status(200).send("add item");
   } catch (error) {
     console.error(error);
+  }
+});
+
+
+/* Json de services */
+
+app.get("/services/social-media", (req, res)=>{
+  try {
+    const jsonData = JSON.parse(fs.readFileSync(socialMedia, "utf8"));
+    res.json(jsonData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({error: "Error al cargar los datos."});
+  }
+});
+
+app.get("/services/social-media-superior", (req, res)=>{
+  try {
+    const jsonData = JSON.parse(fs.readFileSync(superior, "utf8"));
+    res.json(jsonData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({error: "Error al cargar los datos."});
+  }
+});
+
+app.get("/services/campanas", (req, res)=>{
+  try {
+    const jsonData = JSON.parse(fs.readFileSync(campanas, "utf8"));
+    res.json(jsonData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({error: "Error al cargar los datos."});
+  }
+});
+
+app.get("/services/diseno-de-marca", (req, res)=>{
+  try {
+    const jsonData = JSON.parse(fs.readFileSync(disenoMarca, "utf8"));
+    res.json(jsonData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({error: "Error al cargar los datos."});
+  }
+});
+
+app.get("/services/sitios-web", (req, res)=>{
+  try {
+    const jsonData = JSON.parse(fs.readFileSync(sitiosWeb, "utf8"));
+    res.json(jsonData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({error: "Error al cargar los datos."});
+  }
+});
+
+app.get("/services/extra", (req, res)=>{
+  try {
+    const jsonData = JSON.parse(fs.readFileSync(extra, "utf8"));
+    res.json(jsonData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({error: "Error al cargar los datos."});
   }
 });
 

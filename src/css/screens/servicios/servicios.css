@@ -1,0 +1,81 @@
+/* ----------------Background-------------- */
+
+.bg-social-media {
+  background-image: url("../../../img/screens/servicios/social-media/background/background-social-media.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-social-media-superior {
+  background-image: url("../../../img/screens/servicios/social-media-superior/background/background-social-media-superior.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-campanas {
+  background-image: url("../../../img/screens/servicios/campanas/background/background-campanas.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-diseno-de-marca {
+  background-image: url("../../../img/screens/servicios/diseno-de-marca/background/background-diseno-de-marca.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-sitios-web {
+  background-image: url("../../../img/screens/servicios/sitios-web/background/background-sitios-web.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-extra {
+  background-image: url("../../../img/screens/servicios/extras/background/background-extras.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* ----------------Bordes-------------- */
+
+.rounded-20 {
+  border-radius: 2rem;
+}
+
+/* ----------------Estilos para el swiper-------------- */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+    background: white !important;
+}
+
+.swiper-pagination-bullet {
+    background: white !important;
+}

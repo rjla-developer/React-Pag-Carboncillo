@@ -51,8 +51,8 @@ function SwiperExamples({ examples }) {
         modules={[Pagination, Autoplay]}
         className="mySwiper pb-5 pt-3"
       >
-        {examples.map((urlExample) => {
-          return <SwiperSlide>
+        {examples.map((urlExample, index) => {
+          return <SwiperSlide key={index}>
             <div className="bg-secondary rounded">
               <Image
                 className="rounded"

@@ -1,5 +1,6 @@
 [
     {
+        "id":"social-media",
         "titleService": "Social media",
         "descService": "Establece vínculos emocionales con tus clientes, adéntrate al nuevo mundo de la publicidad digital y mejora tu presencia de marca en la web.",
         "borderColorItem": "border-color-yellow",
@@ -7,6 +8,7 @@
         "backgroundColorItem": "background-yellow"
     },
     {
+        "id":"social-media-superior",
         "titleService": "Redes premium",
         "descService": "Si lo tuyo es una experiencia totalmente personalizada, este plan es perfecto para ti, genera experiencias únicas en tu audiencia.",
         "borderColorItem": "border-color-green",
@@ -14,6 +16,7 @@
         "backgroundColorItem": "background-green"
     },
     {
+        "id":"diseno-de-marca",
         "titleService": "Diseño de marca",
         "descService": "Dale una identidad definida y personalizada a tu marca, distingue y destaca tus cualidades empresariales por encima de la competencia.",
         "borderColorItem": "border-color-purple",
@@ -21,6 +24,7 @@
         "backgroundColorItem": "background-purple"
     },
     {
+        "id":"sitios-web",
         "titleService": "Sitios web",
         "descService": "Construye tu espacio digital en internet y haz conocer tu marca con el mundo.",
         "borderColorItem": "border-color-orange",
@@ -28,6 +32,7 @@
         "backgroundColorItem": "background-orange"
     },
     {
+        "id":"campanas",
         "titleService": "Google Ads",
         "descService": "Es hora de llevar tu negocio al siguiente nivel, conecta con tu audiencia mediante diversos tipos de publicidad en el buscador más utilizado.",
         "borderColorItem": "border-color-blue",
@@ -35,6 +40,7 @@
         "backgroundColorItem": "background-blue"
     },
     {
+        "id":"campanas",
         "titleService": "Facebook Ads",
         "descService": "Un grupo de profesionales listos para ayudarte a conectar con tu audiencia.",
         "borderColorItem": "border-color-rose",

@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ItemServicio from "./ItemServicio";
 
 function SeccServicios() {
   const [dataItemsServices, setdataItemsServices] = useState([]);
 
-  fetch("https://app-s5uzbnqava-uc.a.run.app/items-services")
+  useEffect(() => {
+    fetch("http://localhost:5000/carboncillo-pag/us-central1/app/items-services")
     .then((response) => response.json())
     .then((response) => {
       /* console.log("Data received:", response); */
@@ -14,6 +15,11 @@ function SeccServicios() {
     .catch((error) => {
       console.error("Error fetching data:", error);
     });
+  
+    return () => {
+    }
+  }, [])
+  
 
   return (
     <div className="row mt-3 mt-lg-5 d-flex justify-content-center">
@@ -27,6 +33,7 @@ function SeccServicios() {
             borderColorItem={service.borderColorItem}
             textColorItem={service.textColorItem}
             backgroundColorItem={service.backgroundColorItem}
+            serviceUrl={service.id}
           />
         );
       })}

@@ -10,8 +10,6 @@ import "../css/screens/home/home.css";
 import SwiperOpiniones from "@/components/screens/home/SwiperOpiniones";
 import SeccServicios from "@/components/screens/home/seccServicios";
 
-//json:
-/* import dataItemsServices from "../json/dataItemsServices.json"; */
 
 function Home() {
   return (
