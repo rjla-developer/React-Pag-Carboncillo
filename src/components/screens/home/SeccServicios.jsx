@@ -6,7 +6,7 @@ function SeccServicios() {
   const [dataItemsServices, setdataItemsServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/carboncillo-pag/us-central1/app/items-services")
+    fetch("http://127.0.0.1:5001/carboncillo-pag/us-central1/app/items-services")
     .then((response) => response.json())
     .then((response) => {
       /* console.log("Data received:", response); */

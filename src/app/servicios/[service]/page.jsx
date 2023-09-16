@@ -53,7 +53,7 @@ function titleWelcome(dataService) {
       null;
   }
 }
-function SocialMedia({ params }) {
+function Servicio({ params }) {
   const [dataService, setdataService] = useState(null);
 
   useEffect(() => {
@@ -180,4 +180,4 @@ function SocialMedia({ params }) {
   );
 }
 
-export default SocialMedia;
+export default Servicio;
