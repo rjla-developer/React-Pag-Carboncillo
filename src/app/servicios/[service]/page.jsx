@@ -57,10 +57,10 @@ function Servicio({ params }) {
   const [dataService, setdataService] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/carboncillo-pag/us-central1/app/services/${params.service}`)
+    fetch(`http://127.0.0.1:5001/carboncillo-pag/us-central1/app/services/${params.service}`)
     .then((response) => response.json())
     .then((response) => {
-      console.log(response)
+      /* console.log(response) */
       setdataService(response);
     })
     .catch((error) => {
