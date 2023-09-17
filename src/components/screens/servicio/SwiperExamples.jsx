@@ -59,7 +59,7 @@ function SwiperExamples({ examples }) {
                 width={300}
                 height={300}
                 src={urlExample}
-                alt=""
+                alt="Ejemplo de nuestro trabajo"
               />
             </div>
           </SwiperSlide>;

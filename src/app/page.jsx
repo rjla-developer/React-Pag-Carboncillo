@@ -82,7 +82,7 @@ function Home() {
                   <Image
                     className="img-fluid rounded mb-3"
                     src={require("../img/screens/home/eje1.webp")}
-                    alt=""
+                    alt="Ejemplo de un diseño de feed que realizamos."
                   />
                   <p className="fs-3">Feeds</p>
                   <p>Descripción</p>
@@ -93,7 +93,7 @@ function Home() {
                   <Image
                     className="img-fluid rounded mb-3"
                     src={require("../img/screens/home/eje2.webp")}
-                    alt=""
+                    alt="Ejemplo del diseño de marca que le realizamos a una empresa"
                   />
                   <p className="fs-3">Diseño de marca</p>
                   <p>Descripción</p>

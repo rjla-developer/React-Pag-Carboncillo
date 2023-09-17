@@ -10,7 +10,7 @@ function Load() {
             <Image
               className="img-fluid"
               src={require("../../../img/logo/logo-compact.webp")}
-              alt=""
+              alt="Logo responsive de la empresa Carboncillo"
             />
             <p className="fs-1 mt-5">Loading...</p>
           </div>

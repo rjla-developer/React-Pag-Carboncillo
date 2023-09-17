@@ -17,13 +17,13 @@ function Footer() {
               <Image
                 className="d-none d-lg-block img-fluid rounded mb-3 "
                 src={require("../../img/logo/logo-compact.webp")}
-                alt=""
+                alt="Logo responsive de la empresa Carboncillo"
               />
               <Image
                 className="d-block d-lg-none rounded mb-3"
                 width={100}
                 src={require("../../img/logo/logo-compact.webp")}
-                alt=""
+                alt="Logo responsive de la empresa Carboncillo"
               />
             </div>
           </div>

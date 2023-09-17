@@ -14,7 +14,7 @@ function NavbarHome() {
             <Image
               className="d-inline-block img-fluid w-25"
               src={require("../../img/logo/logo.png")}
-              alt="Picture of the author"
+              alt="Logo de la empresa Carboncillo"
             />
           </Link>
 
@@ -49,7 +49,7 @@ function NavbarHome() {
                 className="d-inline-block img-fluid"
                 width="200"
                 src={require("../../img/logo/logo.png")}
-                alt="Picture of the author"
+                alt="Logo de la empresa Carboncillo"
               />
             </Link>
           <Navbar.Toggle aria-controls="navbarNav" className="me-3 bg-light" />
