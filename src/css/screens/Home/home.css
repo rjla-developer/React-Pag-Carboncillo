@@ -26,6 +26,27 @@
   height: 1rem;
 }
 
+.menuServices{
+  width: 600px;
+  background-color: rgb(0, 0, 0, 85%);
+  position: fixed;
+  top: 3rem;
+  right: 4rem;
+  text-align: center;
+  border-radius: 2rem;
+  color: white;
+  
+}
+
+.itemService{
+}
+
+.itemService:hover{
+  background-color: rgb(255, 255, 255, 10%);
+  border-radius: 1rem;
+}
+
+
 /* --------------- Estilos empezando en lg ----------- */
 @media (min-width: 992px) {
   /* Tamaño de fuentes: */
