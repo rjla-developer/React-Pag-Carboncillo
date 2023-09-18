@@ -2,7 +2,7 @@
 import React from "react";
 
 //Components in dependencies:
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,11 +14,15 @@ import "swiper/css/scrollbar";
 function SwiperOpiniones() {
   return (
     <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       /* onSwiper={(swiper) => console.log(swiper)} */
       /* onSlideChange={() => console.log("slide change")} */
     >
