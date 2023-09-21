@@ -33,7 +33,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={nunito.className}>
+      <body className={`bg-black ${nunito.className}`}>
         <NavbarHome />
         {children}
         <Footer />

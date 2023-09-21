@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 //Css:
@@ -8,6 +9,7 @@ import SwiperOpiniones from "@/components/screens/home/SwiperOpiniones";
 import SeccServicios from "@/components/screens/home/seccServicios";
 import ExamplesService from "@/components/screens/home/ExamplesService";
 
+/* import AnimateFadeUp from "../components/animations/AnimateFadeUp"; */
 
 function Home() {
   return (
@@ -50,7 +52,7 @@ function Home() {
                 </p>
               </div>
             </div>
-           <SeccServicios />
+            <SeccServicios />
           </div>
         </div>
       </div>

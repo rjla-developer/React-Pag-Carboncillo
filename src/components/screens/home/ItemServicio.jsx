@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import "../../../css/components/itemServicio.css";
 import "../../../css/global.css";
 import Link from "next/link";
