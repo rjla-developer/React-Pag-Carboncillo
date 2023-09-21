@@ -1,14 +1,12 @@
 import React from "react";
 
-//Next.js:
-import Image from "next/image";
-
 //Css:
 import "../css/screens/home/home.css";
 
 //Components:
 import SwiperOpiniones from "@/components/screens/home/SwiperOpiniones";
 import SeccServicios from "@/components/screens/home/seccServicios";
+import ExamplesService from "@/components/screens/home/ExamplesService";
 
 
 function Home() {
@@ -76,48 +74,7 @@ function Home() {
             </div>
           </div>
           <div className="mt-0 mt-lg-5 pt-0 pt-lg-5">
-            <div className="row mt-5 pt-5 d-flex justify-content-center">
-              <div className="col-10 col-lg-4 mb-3 mb-lg-0">
-                <div>
-                  <Image
-                    className="img-fluid rounded mb-3"
-                    src={require("../img/screens/home/eje1.webp")}
-                    alt="Ejemplo de un diseño de feed que realizamos."
-                  />
-                  <p className="fs-3">Feeds</p>
-                  <p>Descripción</p>
-                </div>
-              </div>
-              <div className="col-10 col-lg-4 mt-3 mb-3 mb-lg-0">
-                <div>
-                  <Image
-                    className="img-fluid rounded mb-3"
-                    src={require("../img/screens/home/eje2.webp")}
-                    alt="Ejemplo del diseño de marca que le realizamos a una empresa"
-                  />
-                  <p className="fs-3">Diseño de marca</p>
-                  <p>Descripción</p>
-                </div>
-              </div>
-              <div className="col-10 col-lg-4 mt-5 mb-5 mb-lg-0">
-                <div>
-                  <Image
-                    className="img-fluid rounded mb-3"
-                    src={require("../img/screens/home/eje3.gif")}
-                    alt=""
-                  />
-                  <p className="fs-3">Animación</p>
-                  <p>Descripción</p>
-                </div>
-              </div>
-            </div>
-            <div className="row d-flex justify-content-center">
-              <div className="col-auto">
-                <button className="btn btn-outline-light btn-lg">
-                  Más acerca de nosotros
-                </button>
-              </div>
-            </div>
+            <ExamplesService />
           </div>
           <div className="row d-flex justify-content-center text-center py-0 py-lg-5 mt-0 mt-lg-5">
             <div className="col-10 col-lg-8 py-5 mb-3 mb-lg-5 mt-3 mt-lg-5">
