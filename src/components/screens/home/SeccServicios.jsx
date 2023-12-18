@@ -7,11 +7,11 @@ function SeccServicios() {
 
   useEffect(() => {
     fetch(
-      "http://127.0.0.1:5001/carboncillo-pag/us-central1/app/items-services"
+      "https://app-s5uzbnqava-uc.a.run.app/items-services"
     )
       .then((response) => response.json())
       .then((response) => {
-        /* console.log("Data received:", response); */
+        console.log("Data received:", response);
         setdataItemsServices(response);
       })
       .catch((error) => {

@@ -34,7 +34,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
       break;
   }
  
-  // fetch data
+  // fetch data https://app-s5uzbnqava-uc.a.run.app/items-services
   const product = await fetch(`http://127.0.0.1:5001/carboncillo-pag/us-central1/app/services/${params.service}`).then((res) => res.json())
 
   return {

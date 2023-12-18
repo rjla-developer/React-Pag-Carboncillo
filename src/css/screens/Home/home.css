@@ -38,9 +38,6 @@
   
 }
 
-.itemService{
-}
-
 .itemService:hover{
   background-color: rgb(255, 255, 255, 10%);
   border-radius: 1rem;
